@@ -53,7 +53,9 @@ export default class extends Component {
         // 在contentState上新建entity
         const contentStateWithEntity = contentState.createEntity(
             'LINK',
-            'Segmented',
+            // 'MUTABLE',
+            // 'IMMUTABLE',
+            'SEGMENTED',
             {url}
         );
         // 获取到刚才新建的entity
