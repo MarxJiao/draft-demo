@@ -12,6 +12,7 @@ import { Layout, Menu, Icon } from 'antd';
 
 import BasicEditor from './components/BasicEditor';
 import linkEditor from './components/LinkEditor';
+import InlineStyle from './components/InlineStyle';
 
 const { Header, Sider, Content } = Layout;
 
@@ -34,7 +35,7 @@ class App extends Component {
                 <Link to="/linkEditor">带链接的文本编辑器</Link>
               </Menu.Item>
               <Menu.Item key="3">
-                <span>nav 3</span>
+                <Link to="/inlineStyle">带链接的文本编辑器</Link>
               </Menu.Item>
             </Menu>
           </Sider>
@@ -43,6 +44,7 @@ class App extends Component {
               
                 <Route path="/basicEditor" component={BasicEditor}/>
                 <Route path="/linkEditor" component={linkEditor}/>
+                <Route path="/inlineStyle" component={InlineStyle}/>
             </Content>
           </Layout>
         </Layout>
