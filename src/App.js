@@ -5,7 +5,8 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
+  HashRouter
 } from 'react-router-dom';
 
 import { Layout, Menu, Icon } from 'antd';
@@ -19,7 +20,7 @@ const { Header, Sider, Content } = Layout;
 class App extends Component {
   render() {
     return (
-      <Router className="App">
+      <HashRouter className="App">
         <Layout>
           <Sider
             style={{ overflow: 'auto', height: '100vh', position: 'fixed', left: 0 }}
@@ -48,7 +49,7 @@ class App extends Component {
             </Content>
           </Layout>
         </Layout>
-      </Router>
+      </HashRouter>
     );
   }
 }
