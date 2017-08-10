@@ -27,7 +27,7 @@ class App extends Component {
             collapsible
           >
             <div className="logo" />
-            <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
+            <Menu theme="dark" mode="inline" defaultSelectedKeys={['100']}>
               <Menu.Item key="1">
                 <Link to="/basicEditor">基础编辑器</Link>
               </Menu.Item>
