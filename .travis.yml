@@ -3,10 +3,10 @@ node_js:
   - "6"
 before_script:
   - npm install -g create-react-app
-  - npm install
+  - yarn
   - 
 script:
-  - npm run build
+  - yarn build
 
 deploy:
   provider: pages
