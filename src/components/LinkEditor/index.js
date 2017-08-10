@@ -7,9 +7,7 @@ import './index.css';
 import React, {Component} from 'react';
 import { Modal, Button, Input } from 'antd';
 import {
-    convertToRaw,
     CompositeDecorator,
-    ContentState,
     Editor,
     EditorState,
     RichUtils

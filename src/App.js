@@ -3,19 +3,18 @@ import logo from './logo.svg';
 import './App.css';
 
 import {
-  BrowserRouter as Router,
   Route,
   Link,
   HashRouter
 } from 'react-router-dom';
 
-import { Layout, Menu, Icon } from 'antd';
+import {Layout, Menu} from 'antd';
 
 import BasicEditor from './components/BasicEditor';
 import linkEditor from './components/LinkEditor';
 import InlineStyle from './components/InlineStyle';
 
-const { Header, Sider, Content } = Layout;
+const {Sider, Content} = Layout;
 
 class App extends Component {
   render() {
