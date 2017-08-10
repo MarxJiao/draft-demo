@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "6"
+before_script:
+  - npm install
+  - 
+script:
+  - npm run build
+
+deploy:
+  provider: pages
+  local_dir: build
+  repo: MarxJiao/draft-demo
+  skip_cleanup: true
+  github_token: $GIT
+  on:
+    branch: master
+  target_branch: gh-pages
