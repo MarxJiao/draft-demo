@@ -13,6 +13,7 @@ import {Layout, Menu} from 'antd';
 import BasicEditor from './components/BasicEditor';
 import linkEditor from './components/LinkEditor';
 import InlineStyle from './components/InlineStyle';
+import BlockStyle from './components/BlockStyle';
 
 const {Sider, Content} = Layout;
 
@@ -35,7 +36,10 @@ class App extends Component {
                 <Link to="/linkEditor">带链接的文本编辑器</Link>
               </Menu.Item>
               <Menu.Item key="3">
-                <Link to="/inlineStyle">带链接的文本编辑器</Link>
+                <Link to="/inlineStyle">行内样式文本编辑器</Link>
+              </Menu.Item>
+              <Menu.Item key="4">
+                <Link to="/blockStyle">块级样式文本编辑器</Link>
               </Menu.Item>
             </Menu>
           </Sider>
@@ -45,6 +49,7 @@ class App extends Component {
                 <Route path="/basicEditor" component={BasicEditor}/>
                 <Route path="/linkEditor" component={linkEditor}/>
                 <Route path="/inlineStyle" component={InlineStyle}/>
+                <Route path="/blockStyle" component={BlockStyle}/>
             </Content>
           </Layout>
         </Layout>
