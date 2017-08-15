@@ -14,6 +14,7 @@ import BasicEditor from './components/BasicEditor';
 import linkEditor from './components/LinkEditor';
 import InlineStyle from './components/InlineStyle';
 import BlockStyle from './components/BlockStyle';
+import Tweet from './components/Tweet';
 
 const {Sider, Content} = Layout;
 
@@ -41,6 +42,9 @@ class App extends Component {
               <Menu.Item key="4">
                 <Link to="/blockStyle">块级样式文本编辑器</Link>
               </Menu.Item>
+              <Menu.Item key="5">
+                <Link to="/tweet">Tweet</Link>
+              </Menu.Item>
             </Menu>
           </Sider>
           <Layout style={{ marginLeft: 200 }}>
@@ -50,6 +54,7 @@ class App extends Component {
                 <Route path="/linkEditor" component={linkEditor}/>
                 <Route path="/inlineStyle" component={InlineStyle}/>
                 <Route path="/blockStyle" component={BlockStyle}/>
+                <Route path="/tweet" component={Tweet}/>
             </Content>
           </Layout>
         </Layout>
