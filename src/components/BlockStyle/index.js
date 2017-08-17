@@ -19,11 +19,11 @@ export default class extends Component {
         };
         this.toggleBlockType = this.toggleBlockType.bind(this);
     }
-    toggleBlockType(inlineStyle) {
+    toggleBlockType(blockType) {
         this.onChange(
             RichUtils.toggleBlockType(
                 this.state.editorState,
-                inlineStyle
+                blockType
             )
         );
     }

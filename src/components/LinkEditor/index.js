@@ -20,8 +20,8 @@ export default class extends Component {
         const decorator = new CompositeDecorator([
             {
                 strategy: findLinkEntities,
-                component: Link,
-            },
+                component: Link
+            }
         ]);
 
         this.state = {

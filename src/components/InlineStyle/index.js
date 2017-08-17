@@ -11,7 +11,12 @@ export default class extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            editorState: EditorState.createEmpty()
+            editorState: EditorState.createEmpty(),
+            styleMap: {
+                'RED': {
+                    color: 'red',
+                },
+            }
         };
         this.onChange = editorState => {
             this.setState({editorState});
@@ -36,6 +41,7 @@ export default class extends Component {
                 />
                 <div className="editor">
                     <Editor
+                        customStyleMap={this.state.styleMap}
                         editorState={this.state.editorState}
                         onChange={this.onChange}/>
                 </div>
@@ -49,6 +55,7 @@ var INLINE_STYLES = [
     {label: 'Italic', style: 'ITALIC'},
     {label: 'Underline', style: 'UNDERLINE'},
     {label: 'Monospace', style: 'CODE'},
+    {label: 'Red', style: 'RED'},
 ];
 const InlineStyleControls = (props) => {
     var currentStyle = props.editorState.getCurrentInlineStyle();
