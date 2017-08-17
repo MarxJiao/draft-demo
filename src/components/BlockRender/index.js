@@ -1,5 +1,5 @@
 /**
- * @file 块级样式
+ * @file 自定义渲染
  * @author Marx
  */
 
@@ -15,7 +15,6 @@ const ImgComponent = (props) => {
                 src={props.blockProps.src}
                 alt="图片"/>
         </div>
-        
     )
 }
 
